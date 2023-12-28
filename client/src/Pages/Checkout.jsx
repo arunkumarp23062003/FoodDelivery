@@ -289,7 +289,7 @@ const Checkout = () => {
         const handlePayment = useCallback(() => {
 
             const options = {
-                key: "rzp_test_GsgsqCF7yQUy39",
+                key: "rzp_test_6eXuEZ5plG52mG",
                 amount: 100 * totalAmount,
                 currency: "INR",
                 name: "Acme Corp",

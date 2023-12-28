@@ -50,12 +50,13 @@ Router.post("/new", async (req, res) => {
                 orderRating: 0, // Add any default value for orderRating
             });
         }
-
+        console.log(cartItem);
         // Add the new order details to the user's orderDetails array
         finalItem.cartItem.forEach(async (Item) => {
             const orderDetails = {
                 food: Item.fetchedItem._id,
                 quantity: Item.itemTotal,
+                paymode: "Prepaid",
                 status: status,
                 deliveryAddress: deliveryAddress,
                 deliveryPhoneNumber: deliveryPhoneNumber,
